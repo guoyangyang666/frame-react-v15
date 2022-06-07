@@ -1,0 +1,45 @@
+
+/* @media print 为打印时适应的样式表*/
+@media print {
+  body {
+    font-size: 12px;
+    color    : rgba(0, 0, 0, 0.65);
+  }
+
+  .print-blocks {
+    padding-top: 20px;
+
+    :global {
+      // 先去除border
+      // .ant-table-bordered table {
+      //   border: none;
+      // }
+      // .ant-table-bordered .ant-table-thead > tr > th, .ant-table-bordered .ant-table-tbody > tr > td{
+      //   border-right: 0px solid #e8e8e8 !important
+      // }
+      // .ant-table-bordered .ant-table-thead > tr:not(:last-child) > th{
+      //   border-right: 0px solid #e8e8e8 !important;
+      // }
+
+      // .ant-table-bordered .ant-table-thead > tr:not(:last-child) > th {
+      //   border-bottom: 0px solid #e8e8e8;
+      // }
+      // .ant-table-tbody > tr > td {
+      //   border-bottom: 0px solid #e8e8e8;
+      // }
+      // .ant-table-thead > tr > th {
+      //   border-bottom: 0px solid #e8e8e8;
+      // }
+      .ant-table-row-cell-ellipsis,
+      .ant-table-row-cell-ellipsis .ant-table-column-title {
+        overflow: visible;
+        white-space: break-spaces;
+      }
+
+      // 添加border
+      .ant-table-bordered table {
+        border-collapse: collapse;
+      }
+    }
+  }
+}

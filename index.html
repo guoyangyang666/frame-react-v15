@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" charset="utf-8"/>
+    <title>数据采集</title>
+<body>
+</body>
+<script>
+(function() {
+    var now = new Date();
+    var isChristmas = now.getMonth() === 11 && now.getDate() === 25;
+    if (isChristmas) {
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML= '.christmas.ant-btn-primary::before {display: none !important;}';
+        document.getElementsByTagName('HEAD').item(0).appendChild(style);
+        document.addEventListener('mouseover', function(e) {
+            var targetDom = e.target;
+            if (targetDom.tagName === 'BUTTON' && targetDom.title === 'Ho Ho Ho!') {
+                targetDom.setAttribute('title', '');
+            }
+    	});
+    }
+})()
+  //禁止界面拖拽图片
+  function imgdragstart(){return false;}
+  for(i in document.images)document.images[i].ondragstart=imgdragstart;
+</script>
+</html>

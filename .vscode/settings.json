@@ -1,0 +1,31 @@
+{
+  "editor.fontSize": 17,
+  "workbench.tree.indent": 20,
+  "editor.mouseWheelZoom": true,
+  "svn.default.encoding": "",
+  "git.autofetch": true,
+  "explorer.compactFolders": false,
+  "editor.detectIndentation": false,
+  "eslint.codeAction.showDocumentation": {
+  
+      "enable": true
+  },
+  "diffEditor.wordWrap": "on",
+  "editor.tabSize": 2,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.followSymlinks": false,
+  "eslint.alwaysShowStatus": true,
+  "workbench.colorTheme": "Dracula Soft",
+  "security.workspace.trust.untrustedFiles": "open",
+  "sync.gist": "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",
+  "sync.autoDownload": true,
+  "sync.autoUpload": true,
+  "sync.quietSync": true,
+  "workbench.editor.untitled.hint": "hidden",
+
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true, //让函数(名)和后面的括号之间加个空格
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false,// 不进行自动化格式
+}

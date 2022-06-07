@@ -1,0 +1,215 @@
+.gd {
+  width: 100%;
+  position: relative;
+  .ant-layout-header {
+    height       : auto;
+    // box-shadow: 0 3px 6px -4px rgba(0, 0, 0, 0.12),
+    //   0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+    // transition: background 0.3s, width 0.2s;
+    box-shadow   : 0 15px 10px -15px #ccc;
+    padding: 0 20px;
+
+    .ant-menu-horizontal {
+      border: 0;
+    }
+  }
+
+  .logo-img {
+    width : 60px;
+    height: 31px;
+    float : left;
+    margin: 16px 28px 16px 0;
+  }
+
+  .logo-img-provice {
+    float : left;
+    margin: 20px 10px 0px 0px;
+    width: 110px;
+    height: auto;
+  }
+
+  .logo-text {
+    font-family: AiDeep-Bold;
+    font-size: 32px;
+    color: #FFFFFF;
+    letter-spacing: -2px;
+    text-align: center;
+    // font-size: 24px;
+    float    : left;
+    // cursor   : pointer;
+    // width    : 120px;
+    // color: #FFFFFF;
+    // background: #0072E7;
+
+    .header-title {
+      line-height: normal;
+      font-size  : 18px;
+      font-family: '微软雅黑 Bold', '微软雅黑 Regular', '微软雅黑';
+      font-weight: 700;
+      color      : #999999;
+      margin-top : 10px;
+    }
+
+    .header-extra {
+      line-height: normal;
+      font-family: '微软雅黑';
+      font-weight: 400;
+      color      : #999999;
+      font-size  : 12px;
+      margin-top : 5px;
+
+      i {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .header-right {
+    position: absolute;
+    top     : 0px;
+    right   : 30px;
+  }
+
+  .title-menu {
+    position        : relative;
+    background-color: #ffffff;
+  }
+
+  .title-menu-text {
+    color            : #999999;
+    font-family      : "PingFangSC-Semibold", "PingFang SC Semibold", "PingFang SC";
+    font-weight      : 650;
+    font-style       : normal;
+    font-size        : 15px;
+    border-bottom    : 1px solid #e6e6e6;
+    // padding-bottom: 10px;
+    line-height      : 35px;
+  }
+  .ant-layout-sider {
+    background: #0072E7;
+  }
+
+  .title-menu-text:before {
+    content         : "";
+    width           : 5px;
+    height          : 20px;
+    background-color: rgb(0, 153, 255);
+    float           : left;
+    border-radius   : 2rem;
+    margin-right    : 10px;
+    margin-top      : 8px;
+    margin-left     : 10px;
+  }
+
+  .ant-layout-sider-trigger {
+    background: #3596FB;
+    top: 64px;
+  }
+
+  .ant-layout-sider-has-trigger {
+    padding-bottom: 0px;
+  }
+
+  .ant-layout-sider-children {
+    overflow: auto;
+    height  : calc(~"100vh - 66px");
+    padding-top: 48px;
+
+    // height  : calc(~"100vh - 48px");
+    // .ant-menu-inline,
+    // .ant-menu-vertical,
+    // .ant-menu-vertical-left {
+    //   background  : #EFF2F5;
+    //   border-right: 1px solid transparent;
+    // }
+  }
+
+  .layout-content-gd {
+    width: 100%;
+    // 左侧菜单
+    .layout-left-menu {
+      position: relative;
+      height  : calc(~"100vh - 64px");
+      float: left;
+    }
+    .layout-content {
+      position: relative;
+      height: calc(~"100vh - 64px");
+      float: left;
+    }
+  }
+
+  // 菜单缩小后的图标大小
+  .ant-menu-inline-collapsed>.ant-menu-item .anticon,
+  .ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-item .anticon,
+  .ant-menu-inline-collapsed>.ant-menu-item-group>.ant-menu-item-group-list>.ant-menu-submenu>.ant-menu-submenu-title .anticon,
+  .ant-menu-inline-collapsed>.ant-menu-submenu>.ant-menu-submenu-title .anticon {
+    font-size: 18px;
+  }
+
+  .ant-menu-dark .ant-menu-item > a {
+    color: #FFFFFF;
+    line-height: 58px;
+    padding-bottom: 3px;
+  }
+  .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+    background: #0054A7;
+  }
+  .ant-menu-dark {
+    background-color: #0072E7;
+  }
+  .ant-menu.ant-menu-dark .ant-menu-item-selected {
+    background-color: #FF9900;
+  }
+  .topMenu {
+    :global {
+      .ant-menu.ant-menu-dark .ant-menu-item-selected {
+        background-color: #0072E7;
+      }
+      .ant-menu.ant-menu-dark .ant-menu-item-active {
+        background-color: #0072E7;
+      }
+      .ant-menu-item-active > a {
+        color: #FF9900;
+        border-bottom: 3px solid #FF9900;
+        padding-bottom: 0px;
+      }
+      .ant-menu-dark .ant-menu-item-selected > a {
+        color: #FF9900;
+        border-bottom: 3px solid #FF9900;
+        padding-bottom: 0px;
+      }
+      .ant-menu-dark .ant-menu-item-selected .anticon {
+        color: #FF9900;
+      }
+    }
+  }
+  .leftMenu {
+    :global {
+      .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+        background: #0054A7 !important;
+        box-shadow: none;
+        position: relative;
+      }
+    }
+  }
+
+  .ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+    background: #0072E7 !important;
+    .ant-menu-item-active > a {
+      color: #FF9900;
+      padding-bottom: 0px;
+    }
+    .ant-menu-item-active .anticon {
+      color: #FF9900;
+    }
+    .ant-menu-dark .ant-menu-item-selected > a {
+      border-bottom: 3px solid #FF9900;
+      padding-bottom: 0px;
+    }
+    .ant-menu-dark .ant-menu-item-selected .anticon {
+      color: #FF9900;
+    }
+  }
+}
+

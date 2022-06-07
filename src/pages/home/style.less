@@ -1,0 +1,215 @@
+.adr_home {
+  // 模块
+  .moudle {
+    width: 100%;
+
+    :global {
+      .ant-card-body {
+        padding: 15px;
+      }
+
+      .ant-col {
+        padding: 5px;
+      }
+
+    }
+
+    .moudle_title {
+      color: #333333;
+      font-family: "微软雅黑 Bold", "微软雅黑 Regular", "微软雅黑";
+      font-weight: 700;
+      font-style: normal;
+      font-size: 16px;
+      position: relative;
+      padding-bottom: 25px;
+    }
+
+    .moudle_title_icon {
+      &> {
+        img {
+          position: absolute;
+          top: -1px;
+          width: 25px;
+          height: 25px;
+        }
+        span {
+          margin-left: 35px;
+        }
+      }
+    }
+
+    .noticeCss {
+      &>div {
+        font-size: 16px;
+        color: #333333;
+        font-family: "黑体";
+        font-style: normal;
+        font-weight: 400;
+      }
+      .noticeTitle{
+        color: #2da9fa;
+      }
+      .noticeType {
+        font-family: Alibaba-PuHuiTi-M;
+        color: #333333;
+        font-weight: 500;
+      }
+  
+      .noticeContent {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: calc(~"100% - 100px");
+        cursor: pointer;
+      }
+  
+      .noticeDate {
+        color: #333333;
+        float: right;
+        font-family: Alibaba-PuHuiTi-R;
+        letter-spacing: 0;
+        text-align: right;
+        width: 100px;
+      }
+    }
+
+    .dealCss {
+      &>div {
+        font-size: 16px;
+        color: #333333;
+        font-family: "黑体";
+        font-style: normal;
+        font-weight: 400;
+      }
+      .dealTitle{
+        color: #2da9fa;
+      }
+      .dealType {
+        font-family: Alibaba-PuHuiTi-M;
+        color: #333333;
+        font-weight: 500;
+      }
+  
+      .dealContent {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: calc(~"100% - 200px");
+        cursor: pointer;
+      }
+      .dealDate {
+        float: right;
+        font-family: Alibaba-PuHuiTi-R;
+        color: #999999;
+        letter-spacing: 0;
+        text-align: right;
+        width: 200px;
+        color: #333333;
+        &>span {
+          margin-right: 20px;
+          width: 80px;
+          display: inline-block;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .searchCss {
+    :global {
+      .ant-form-item {
+        margin-bottom: 0px !important;
+      }
+      .ant-form-item-control {
+        line-height: normal;
+      }
+      .ant-calendar-picker-input.ant-input {
+        width: 110px;
+      }
+      .ant-col {
+        padding: 0px !important;
+      }
+    }
+  }
+  .more_search {
+    float: right;
+    font-family: "Arial Normal", "Arial";
+  }
+  .moreList {
+    float: right;
+    color: #0000ff;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: normal;
+    font-family: "宋体 Bold", "宋体 常规", "宋体";
+  }
+
+  :global {
+    .ant-card {
+      height: 100%;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px 0 rgba(231,231,231,0.10)
+    }
+
+    .ant-table-bordered .ant-table-body > table{
+      border-top: 1px solid #F2F2F2;
+      border-left: 1px solid #F2F2F2;
+    }
+    .ant-table-bordered .ant-table-thead > tr > th,.ant-table-bordered .ant-table-tbody > tr > td{
+      border-right: 1px solid #F2F2F2;
+    }
+    .ant-table-tbody > tr > td,.ant-table-thead > tr > th{
+      border-bottom: 1px solid #F2F2F2;
+    }
+
+    .ant-table-bordered.ant-table-empty .ant-table-placeholder{
+      border-right: 1px solid #F2F2F2;
+      border-left: 1px solid #F2F2F2;
+    }
+    .ant-table-placeholder {
+      border-top: 1px solid #F2F2F2;
+      border-bottom: 1px solid #F2F2F2;
+    }
+    
+
+    .ant-table-thead>tr>th {
+      background-color: #F5F9FF;
+      color: #808080;
+    }
+
+    // 奇数行
+    .ant-table-tbody>tr:nth-child(odd)>td {
+      background-color: #FFFFFF;
+      color: #333333;
+      font-family: Alibaba-PuHuiTi-R;
+      font-size: 13px;
+      padding: 10px;
+    }
+
+    // 偶数行
+    .ant-table-tbody>tr:nth-child(even)>td {
+      background-color: #FAFCFF;
+      color: #333333;
+      font-family: Alibaba-PuHuiTi-R;
+      font-size: 13px;
+      padding: 10px;
+    }
+  }
+
+  .eventmonitor {
+    width: 100%;
+
+    :global {
+      .ant-card-body {
+        padding: 15px;
+      }
+
+      .ant-col {
+        padding: 5px;
+      }
+
+    }
+  }
+}
